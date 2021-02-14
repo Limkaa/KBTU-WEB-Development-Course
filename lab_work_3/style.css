@@ -1,0 +1,100 @@
+.container {
+	font-family: monospace;
+	width: 50%;
+	height: 400px;
+	background-color: white;
+	margin-left: 25%;
+	border-radius: 20px;
+}
+
+#header {
+	background-color: rgb(162, 205, 63);
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	height: 100px;
+}
+
+#logo {
+	font-size: 2em;
+	text-align: center;
+	vertical-align: center;
+	color: white;
+	padding: 40px;
+}
+
+#add-task {
+	height: 30px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: white;
+	margin-bottom: 5px;
+	border: 3px solid grey;
+}
+
+#input {
+	float: left;
+	width: calc(100% - 60px);
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 90%;
+}
+
+#input:focus {
+	outline: 0;
+}
+
+#add-button {
+	font-size: 90%;
+	color: white;
+	width: 60px;
+	height: 30px;
+	border: none;
+	margin-right: 0px;
+	background-color: grey;
+}
+
+#add-button:hover {
+	background-color: rgb(52, 156, 247);
+}
+
+#tasks {
+	border: 3px solid grey;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.item {
+	width: 100%;
+	display: inline-grid;
+ 	grid-template-columns: 20px auto 20px;
+ 	grid-column-gap: 10px;
+	border-bottom: 1px solid lightgrey;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.checkbox {
+	margin-right: 20px;
+}
+
+.checkbox:checked {
+	color: green;
+}
+
+.task-text {
+	font-family: monospace;
+	font-size: 15px;
+	width: 90%;
+}
+
+.stroked {
+	color: lightgrey;
+	text-decoration: line-through; 
+}
+
+.delete-icon {
+	width: 15px;
+}
+
