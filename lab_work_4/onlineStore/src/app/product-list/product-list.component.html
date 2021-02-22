@@ -1,0 +1,22 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products" class="product">
+
+  <!-- Product info -->
+  <app-product-item
+    [product]="product">
+  </app-product-item>
+
+  <!-- Button for sharing product link in Telegram -->
+  <button (click)="share(product.link, product.name)">
+    Share
+  </button>
+
+  <!-- Button "Notify me" -->
+  <app-product-alerts
+    [product]="product" 
+    (notify)="onNotify()">
+  </app-product-alerts>
+  <hr>
+
+</div>

@@ -1,0 +1,26 @@
+  <!-- Product card header (name with link) -->
+  <h3>
+    <a href="{{ product.link }}" target="_blank">{{product.name}}</a>
+  </h3>
+
+  <!-- Product image -->
+  <img  class="item-image" src={{product.image}}>
+  <h4 *ngIf="product.description">
+    Product description:
+  </h4>
+
+  <!-- Product description -->
+  <p *ngIf="product.description"> 
+    {{product.description}}
+  </p>
+
+  <!-- Product rating -->
+  <p *ngIf="product.rating">
+    {{product.rating}} / 5
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Orange_star.svg/1200px-Orange_star.svg.png" width="15px">
+  </p>
+
+  <!-- Product price -->
+  <h4>
+    Price: {{product.price}} $
+  </h4>
