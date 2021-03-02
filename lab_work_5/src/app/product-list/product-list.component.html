@@ -1,0 +1,39 @@
+<h2>Products</h2>
+
+<div *ngFor="let category of products" class="category">
+
+  <p (click)="categoryPressed(category.category_id)" class="category_name">{{category.category_name}}</p>
+
+  <div *ngIf="category.display_flag">
+    <div *ngFor="let item of category.items" class="product">
+
+      <!-- Product info -->
+      <app-product-item
+        [product]="item">
+      </app-product-item>
+
+      <!-- Button for sharing product link in Telegram -->
+      <button (click)="share(item.link, item.name)">
+        Share
+      </button>
+
+       <!-- Button for liking product -->
+      <button (click)="likeItem(category.category_id, item.id)">
+        Like
+      </button>
+
+       <!-- Button for removing product -->
+      <button (click)="removeItem(category.category_id, item.id)">
+        Remove
+      </button>
+
+      <!-- Button "Notify me" -->
+      <app-product-alerts
+        [product]="item" 
+        (notify)="onNotify()">
+      </app-product-alerts>
+      <hr>
+    </div>
+  </div>
+
+</div>
