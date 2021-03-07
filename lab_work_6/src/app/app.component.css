@@ -1,0 +1,31 @@
+.navigation-bar {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.navigation-option {
+	float: left;
+}
+
+.navigation-option a {
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation-option a:hover {
+	background-color: #111;
+}
+
+.content {
+  	padding: 20px 0px 20px 0px;
+  	margin-top: 30px;
+}
