@@ -1,0 +1,13 @@
+<p class = "page-title">Categories</p>
+
+<div class = "categories-block">
+	<div *ngIf="loaded">
+		<div *ngFor="let category of categories" class = "category">
+			<a [routerLink]="['/categories', category.id]">{{category.name}}</a>
+			<br>
+		</div>
+	</div>
+	  	
+
+	<p *ngIf="!loaded">Loading categories list...</p>
+</div>

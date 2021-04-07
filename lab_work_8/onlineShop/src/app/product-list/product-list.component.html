@@ -1,0 +1,12 @@
+
+<p class="page-title">{{category.name}}</p>
+
+<ul *ngIf="loaded">
+  <div *ngFor="let product of products">
+  	<div *ngIf="product.category.id == category.id" class="product-item">
+    	<a [routerLink]="['/products', product.id]">{{product.name}}</a>
+    </div>
+  </div>
+</ul>
+
+<p *ngIf="!loaded">Loading category products...</p>
