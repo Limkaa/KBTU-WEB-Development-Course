@@ -1,0 +1,51 @@
+<div id="account-info">
+	<div class="block-title">Account info</div>
+	<div class="content-block">
+		<div *ngIf="loaded" id="inner-block">
+
+			<br>
+
+			<div id="info-field">
+				<div id="balance-value">Subscription days: {{account.subscription}}</div>
+				<button routerLink="/payment" id="prolongation">Extend</button>
+			</div>
+
+			<br>
+
+			<div class="info-field">
+				<div class="field-title">Name</div>
+				<div class="field-value">{{account.name}}</div>
+			</div>
+			<div class="info-field">
+				<div class="field-title">Email</div>
+				<div class="field-value">{{account.username}}</div>
+			</div>
+			<div class="info-field">
+				<div class="field-title">Address</div>
+				<div class="field-value">{{account.address}}</div>
+			</div>
+			<div class="info-field">
+				<div class="field-title">Phone</div>
+				<div class="field-value">{{account.phone}}</div>
+			</div>
+
+			<br><hr>
+
+			<div id="description">Here you can create, read, update and delete additional info about your allergies and wishes! We will consider it :)</div>
+
+			<br>
+
+			<input type="text" placeholder="Write new info, which we should consider" id="input-field" [(ngModel)]="new_wish">
+			<button id="add-button" (click)="add_wish()">Add</button>
+
+			<div *ngIf="loaded" class="wishes-list">
+			  	<div *ngFor="let wish of account.wishes; let i = index;" class="wish-item">
+			    	<input type="text" class="wish-text" [value]="account.wishes[i].text" #wishField>
+			    	<button class="save-button" (click)="update_wish(i, wishField.value)">✓</button>
+			    	<button class="delete-button" (click)="delete_wish(i)">X</button>
+			  	</div>
+			</div>
+		</div>
+		<p *ngIf="!loaded">Loading additional info list...</p>
+	</div>
+</div>

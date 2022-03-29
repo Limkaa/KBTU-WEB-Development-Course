@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    
+  }
+body{
+    margin: 30px;
+    margin-left: 100px;
+}
+
+#product_info{
+    background-color: rgb(177, 255, 161); 
+    text-align: center;
+    padding: 3em 2em 0;
+    color: #333335;
+    font-family: 'EB Garamond', serif;
+    font-variant-ligatures: none;
+    font-weight: 500;
+    max-width: 33.3333333333%;
+    font-size: 18px;
+}
+.info{
+    float: left;
+}
+
+
+.product_ingredients{
+    background-color: rgb(177, 255, 161); 
+    margin-bottom: 2em;
+    padding: 0 1em;
+    color: #333335;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    line-height: 1.5;
+    float: left;
+    width: 50%;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.product_notes{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(177, 255, 161); 
+    margin-bottom: 2em;
+    padding: 0 1em;
+    color: #333335;
+    font-weight: 300;
+}
+
+
+

@@ -1,0 +1,19 @@
+<div id="authorizing-form-block">
+	<div class="sign-in-form">
+		<p id="title">HEALTHY MEAL</p>
+		<div id="login-form-and-comment">
+			<div id="login-form">
+				<form>
+					<input type="text" placeholder="Your name and surname" id="name" class="input-field" name="name" [(ngModel)]="personName"><br>
+					<input type="text" placeholder="E-mail address" id="login" class="input-field" name="login" [(ngModel)]="email"><br>
+					<input type="text" placeholder="Phone number" id="phone" class="input-field" name="phone" [(ngModel)]="phone"><br>
+					<input type="text" placeholder="Address" id="address" class="input-field" name="address" [(ngModel)]="address"><br>
+					<input type="password" placeholder="Password" id="password" class="input-field" name="password" [(ngModel)]="password"><br>
+					<input type="password" placeholder="Repeat password" id="repeated-password" class="input-field" name="repeated-password" [(ngModel)]="repeated_password"><br>
+					<button name="submit-registration" type="submit" id="registration-submit-button" (click)="register()">Register</button>
+				</form>
+				<button name="login-account" type="submit" id="login-account-button" [routerLink]="['/login']">Sign in</button>
+			</div>
+		</div>
+	</div>
+</div>

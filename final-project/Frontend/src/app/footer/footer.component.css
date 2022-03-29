@@ -1,0 +1,14 @@
+.authors {
+margin-top: 3px;
+font-weight: 600;
+font-size: 13px;
+color: rgb(144, 148, 147);
+}
+
+.copyright {
+margin-top: 10px;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 12px;
+color: rgb(187, 180, 172);
+}

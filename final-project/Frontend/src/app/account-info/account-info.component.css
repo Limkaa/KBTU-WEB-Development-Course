@@ -1,0 +1,158 @@
+#account-info {
+}
+
+.block-title {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.content-block {
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px #999999;
+	width: 500px;
+	margin: 20px auto 10px auto;
+	padding: 10px;
+}
+
+#balance-value {
+	text-align: center;
+	display: inline-grid;
+	margin: auto;
+	width: 50%;
+}
+
+#prolongation {
+	width: 50%;
+	display: inline-grid;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 20px;
+	background-color: #28B672;
+	border-style: none;
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 15px;
+}
+
+#prolongation:hover {
+	background-color: #29bb89;
+}
+
+#inner-block {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.info-field {
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px #999999;
+	width: 450px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #FFC000;
+}
+
+.field-title {
+	font-size: 15px;
+	text-align: center;
+	border-radius: 20px;
+	display: inline-grid;
+	width: 20%;
+	padding-left: 2%;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	color: black;
+}
+
+.field-value {
+	width: 73%;
+	border-radius: 20px;
+	background-color: white;
+	display: inline-grid;
+	padding-left: 5%;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+#description {
+	text-align: left;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+#input-field {
+	width: 79%;
+	padding: 2%;
+	border-radius: 20px;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: 1px;
+	margin-right: 1%;
+	font-size: 15px;
+	font-family: Trebuchet MS;
+}
+
+#add-button {
+	width: 15%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #28B672;
+	border-style: none;
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 15px;
+	border-radius: 20px;
+}
+
+.wishes-list {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	list-style: decimal;
+}
+
+.wish-item {
+	margin-bottom: 5px;
+}
+
+.wish-text {
+	width: 75%;
+	margin-right: 1%;
+	border-radius: 20px;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: Trebuchet MS;
+	font-size: 15px;
+	padding-left: 5%;
+}
+
+.save-button {
+	width: 7%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 1%;
+	background-color: #28B672;
+	border-style: none;
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 15px;
+	border-radius: 20px;
+}
+
+.delete-button {
+	width: 7%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: lightgrey;
+	border-style: none;
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 15px;
+	border-radius: 20px;
+}
+

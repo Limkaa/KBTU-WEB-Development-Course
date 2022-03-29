@@ -1,0 +1,29 @@
+section {
+    background: rgb(78, 168, 78);
+    color: rgb(9, 10, 7);
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.main-area {
+    padding-top: 64px;
+    padding-right: 40px;
+    padding-left: 40px;
+    height: 740px;
+    width: 1424px;
+    background-size: cover;
+    text-align: left;
+}
+
+.main-area h1 {
+    color: rgb(35, 65, 21);
+    font-size: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}

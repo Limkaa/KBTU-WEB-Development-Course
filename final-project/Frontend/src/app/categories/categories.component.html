@@ -1,0 +1,39 @@
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<body>
+<div class="catalog">
+    <div  id = "category">
+    <ul class ="cate"> 
+    <ng-container>
+      <div *ngFor="let c of categories" >
+        <button class="cat_title" (click)="ChangeStatus(c)">{{c.title}}</button> 
+      </div>
+    </ng-container>
+    </ul>
+   </div> 
+   <div class= "container">
+       
+   <div class="row"> 
+    <ng-container *ngIf="!IsCatalog" > 
+      <div *ngFor="let f of products" >
+        <div class="col-md-3">    
+          <div class="product-top" >
+          <img src="{{f.image}}" alt="Photo Of This Catalog" class ="food_img" width = 260>
+          <div class = "product-bottom text-center">
+          <h4 class = "meal_title" >{{f.title}}</h4>
+          <p class = "meal_des">{{f.description}}</p>
+        </div>
+          <a class="detail" routerLink="/product/{{f.id}}">See Details</a>        
+      </div>
+    </div> 
+    </div> 
+      <button (click)="ChangeStatus(f)" class="button_back">Back</button>
+    </ng-container>
+  </div>
+
+</div>
+
+  </div>
+</body>
+

@@ -1,0 +1,32 @@
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<body>
+    <div id = "image" class= "info">
+        <img src="{{product.image}}" alt="Product Image" class ="food_img" width = 822 height=430>
+    </div>
+    <div id="product_info" class= "info">
+        <h2 class = "meal_title" >{{product.title}}</h2>
+        <h4 class = "meal_des">{{product.description}}</h4>
+        <p class = "meal_des" ><i>{{product.detail}}</i></p>
+    </div>
+    <div class="product_ingredients">
+        <h2 class = "meal_des">Ingredients</h2>
+        <p class = "meal_des"> {{product.ingredients}}</p>
+    </div>
+
+    <div class="product_notes">
+        <h2 class = "meal_des">Notes</h2>
+        <i class="fas fa-apple-alt"></i>
+        <p class = "meal_des">{{product.notes}}</p>
+    </div>
+
+
+
+</body>
+
+
+
+
+
+
+

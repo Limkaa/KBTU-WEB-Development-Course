@@ -1,0 +1,58 @@
+#authorizing-form-block {
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px #999999;
+	margin-top: 200px;
+	width: 400px;
+	height: 400px;
+	margin: 100px auto auto auto;
+}
+
+#title {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 100px;
+	font-family: Trebuchet MS;
+	padding-top: 50px;
+}
+
+#login-form {
+	padding: 15px;
+}
+
+.input-field {
+	width: 80%;
+	height: 20px;
+	font-size: 100%;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	padding:10px;
+	margin-bottom: 15px;
+}
+
+#login-submit-button {
+	width: 80%;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	background-color: #28B672;
+	color: rgb(255, 255, 255);
+	font-size: 100%;
+}
+#login-submit-button:hover {
+    background-color: #29bb89;
+}
+
+#create-account-button {
+	width: 80%;
+	height: 40px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: lightgrey;
+	color: rgb(255, 255, 255);
+	font-size: 100%;
+}
+#create-account-button:hover {
+    background-color: #dddddd;
+}

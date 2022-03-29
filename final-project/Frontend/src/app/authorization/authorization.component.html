@@ -1,0 +1,15 @@
+<div id="authorizing-form-block">
+	<div class="sign-in-form">
+		<p id="title">HEALTHY MEAL</p>
+		<div id="login-form-and-comment">
+			<div id="login-form">
+				<form>
+					<input type="text" placeholder="E-mail address" id="login" class="input-field" name="login" [(ngModel)]="email"><br>
+					<input type="password" placeholder="Password" id="password" class="input-field" name="password" [(ngModel)]="password"><br>
+					<button name="submit-login" type="submit" id="login-submit-button" (click)="login()">Sign in</button>
+				</form>
+				<button name="create-account" type="submit" id="create-account-button" [routerLink]="['/register']">Register</button>
+			</div>
+		</div>
+	</div>
+</div>
